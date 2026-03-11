@@ -1,0 +1,29 @@
+split_pth: /path/to/pixel_dataset_768
+snapshot_path: /path/to/markerall/snapshots/
+save_model_pth: /path/to/markerall/checkpoints/
+save_model_freq_epoch: 1
+mode: train
+in_dim: 768
+
+# inference
+patch_split_pth: /path/to/registered_patches/registered_patches_optimized_markerall
+slide_pth: /path/to/slide_pth
+cutoff_pth: /path/to/pixel_cutoff_otsu_768.pt
+test_key: _1_Scan
+
+marker_list: all
+
+batch_size_per_gpu: 2648
+max_epochs: 55
+max_iter: 100000
+pre_trained: True
+num_workers: 16
+
+bf16: False
+tqdm: 0
+
+base_lr: 0.0001
+reg: 1e-02 # L2-regularization weight decay
+deterministic: True
+seed: 1234
+

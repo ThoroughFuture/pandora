@@ -1,0 +1,13 @@
+source: /path/to/mif_registered_data_mifref
+save_dir: /path/to/registered_patches/coords256_overlap128
+step_size: 128
+patch_size: 256
+patch_level: 0
+key_word: _HE_
+
+patch: True
+seg: True
+stitch: True
+no_auto_skip: False
+preset: my.csv
+process_list: None
